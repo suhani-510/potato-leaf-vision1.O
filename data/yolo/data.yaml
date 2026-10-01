@@ -1,0 +1,4 @@
+names:
+  0: late_blight
+path: .
+train: train.txt
