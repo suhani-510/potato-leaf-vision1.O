@@ -1,4 +1,7 @@
+
+path: C:/Users/user/potato-leaf-vision/data/yolo
+train: images/train
+val: images/val
+nc: 1
 names:
   0: late_blight
-path: .
-train: train.txt
