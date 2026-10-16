@@ -1,0 +1,17 @@
+# Documented ML stack used by existing notebooks. Not installed in Stage 0–1.
+# Do not treat this file as proof that packages are present on a machine.
+#
+# notebooks/01_dataset_analysis.py: pillow, pandas, matplotlib
+# notebooks/02_cnn_classification.py: numpy, matplotlib, tensorflow, scikit-learn
+# notebooks/05_train_yolo.py and 06_test_model.py: ultralytics (pulls torch)
+#
+# Suggested pins for a later Python 3.11 research venv (unverified on this host):
+# tensorflow>=2.15,<2.19
+# ultralytics>=8.0
+# torch
+# opencv-python
+# pandas
+# matplotlib
+# scikit-learn
+# numpy
+# pillow

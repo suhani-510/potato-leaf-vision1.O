@@ -1,0 +1,4 @@
+image,ground_truth_index,candidate_count,best_iou_to_ground_truth,confidence_of_best_iou_candidate,highest_candidate_confidence,iou_of_highest_confidence_candidate
+e95f2954-1b68-490d-9684-90b3080676b1___RS_LB 3997.JPG,1,300,0.7269,0.10794,0.10794,0.7269
+ea356b9c-9090-4f0d-9083-d1f63c77372d___RS_LB 2800.JPG,1,300,0.63272,0.0336,0.19791,0.31665
+ebd47dca-590b-43c4-812d-32f95b776690___RS_LB 3834.JPG,1,300,0.85247,0.10304,0.2287,0.67678

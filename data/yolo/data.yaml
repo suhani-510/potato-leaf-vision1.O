@@ -1,5 +1,5 @@
-
-path: C:/Users/user/potato-leaf-vision/data/yolo
+# Dataset root is this directory (data/yolo), not a machine-specific absolute path.
+path: .
 train: images/train
 val: images/val
 nc: 1

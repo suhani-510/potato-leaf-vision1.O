@@ -1,0 +1,220 @@
+{
+  "description": "YOLO detections and unverified OpenCV/segmentation candidates. Candidate masks are not confirmed disease measurements.",
+  "images_processed": 3,
+  "confidence_threshold": 0.25,
+  "image_size": 640,
+  "results": [
+    {
+      "image": "e3d4df7f-f184-453e-8a99-3cb0de5a2488___RS_LB 3959.JPG",
+      "width": 256,
+      "height": 256,
+      "yolo_detection_count": 3,
+      "opencv_candidate_count": 0,
+      "segmentation_candidate_region_count": 22,
+      "segmentation_candidate_ratio_percent": 19.6524,
+      "segmentation_mask_type": "Unverified HSV heuristic candidates",
+      "yolo_detections": [
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.47868,
+          "box_xyxy": [
+            137.82,
+            63.26,
+            177.09,
+            103.31
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.28346,
+          "box_xyxy": [
+            90.18,
+            160.48,
+            147.32,
+            216.6
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.25645,
+          "box_xyxy": [
+            143.65,
+            64.34,
+            170.83,
+            87.12
+          ]
+        }
+      ],
+      "opencv_candidate_boxes_xyxy": []
+    },
+    {
+      "image": "e575421c-a9d4-4c0e-8027-b12fca1e3ac9___RS_LB 2806.JPG",
+      "width": 256,
+      "height": 256,
+      "yolo_detection_count": 1,
+      "opencv_candidate_count": 14,
+      "segmentation_candidate_region_count": 54,
+      "segmentation_candidate_ratio_percent": 12.7831,
+      "segmentation_mask_type": "Unverified HSV heuristic candidates",
+      "yolo_detections": [
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.27979,
+          "box_xyxy": [
+            75.99,
+            138.89,
+            164.1,
+            217.85
+          ]
+        }
+      ],
+      "opencv_candidate_boxes_xyxy": [
+        [
+          91,
+          0,
+          247,
+          49
+        ],
+        [
+          195,
+          36,
+          226,
+          49
+        ],
+        [
+          92,
+          52,
+          107,
+          66
+        ],
+        [
+          5,
+          57,
+          251,
+          248
+        ],
+        [
+          144,
+          62,
+          201,
+          89
+        ],
+        [
+          202,
+          65,
+          221,
+          78
+        ],
+        [
+          56,
+          79,
+          74,
+          100
+        ],
+        [
+          131,
+          89,
+          139,
+          98
+        ],
+        [
+          122,
+          102,
+          197,
+          129
+        ],
+        [
+          56,
+          104,
+          71,
+          118
+        ],
+        [
+          28,
+          115,
+          42,
+          127
+        ],
+        [
+          31,
+          139,
+          43,
+          147
+        ],
+        [
+          24,
+          159,
+          41,
+          171
+        ],
+        [
+          64,
+          165,
+          80,
+          174
+        ]
+      ]
+    },
+    {
+      "image": "e7e39ba3-b9af-4d5f-afb1-aea45e13446a___RS_LB 2876.JPG",
+      "width": 256,
+      "height": 256,
+      "yolo_detection_count": 4,
+      "opencv_candidate_count": 0,
+      "segmentation_candidate_region_count": 6,
+      "segmentation_candidate_ratio_percent": 30.7763,
+      "segmentation_mask_type": "Unverified HSV heuristic candidates",
+      "yolo_detections": [
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.37638,
+          "box_xyxy": [
+            47.08,
+            20.81,
+            182.11,
+            143.97
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.36196,
+          "box_xyxy": [
+            36.86,
+            34.0,
+            171.71,
+            157.54
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.31109,
+          "box_xyxy": [
+            29.85,
+            65.35,
+            154.62,
+            179.94
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "late_blight",
+          "confidence": 0.29973,
+          "box_xyxy": [
+            61.17,
+            4.59,
+            158.61,
+            109.94
+          ]
+        }
+      ],
+      "opencv_candidate_boxes_xyxy": []
+    }
+  ]
+}
