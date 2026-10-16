@@ -119,3 +119,87 @@ def image_label_pairs(image_dir: Path, label_dir: Path) -> list[tuple[Path, Path
         if label.exists():
             pairs.append((image, label))
     return pairs
+
+
+def main() -> None:
+    """Audit YOLO image-label pairs for train and validation splits."""
+    from .paths import ProjectPaths, load_yolo_data_yaml
+
+    project_root = Path(__file__).resolve().parents[2]
+    yaml_path = project_root / "data" / "yolo" / "data.yaml"
+
+    print("=== Potato Leaf Vision: YOLO Dataset Audit ===")
+    print(f"Project root: {project_root}")
+    print(f"Dataset config: {yaml_path}")
+
+    if not yaml_path.exists():
+        print("ERROR: YOLO data.yaml was not found.")
+        return
+
+    try:
+        config = load_yolo_data_yaml(yaml_path)
+    except Exception as exc:
+        print(f"ERROR loading data.yaml: {exc}")
+        return
+
+    print(f"Dataset config loaded: {config}")
+
+    for split in ("train", "val"):
+        image_dir = project_root / "data" / "yolo" / "images" / split
+        label_dir = project_root / "data" / "yolo" / "labels" / split
+
+        print(f"\n--- {split.upper()} ---")
+        print(f"Image directory: {image_dir}")
+        print(f"Label directory: {label_dir}")
+
+        if not image_dir.exists():
+            print("ERROR: image directory does not exist.")
+            continue
+        if not label_dir.exists():
+            print("ERROR: label directory does not exist.")
+            continue
+
+        unpaired_images, unpaired_labels = unpaired_stems(image_dir, label_dir)
+        pairs = image_label_pairs(image_dir, label_dir)
+
+        print(f"Images: {len(_stems_in(image_dir, IMAGE_EXTENSIONS))}")
+        print(f"Label files: {len(_stems_in(label_dir, {'.txt'}))}")
+        print(f"Matched image-label pairs: {len(pairs)}")
+        print(f"Images missing labels: {len(unpaired_images)}")
+        print(f"Labels missing images: {len(unpaired_labels)}")
+
+        for name in sorted(unpaired_images)[:10]:
+            print(f"  Missing label: {name}")
+        for name in sorted(unpaired_labels)[:10]:
+            print(f"  Missing image: {name}")
+
+        invalid_files = 0
+        invalid_boxes = 0
+        empty_files = 0
+
+        for _, label_path in pairs:
+            try:
+                boxes = parse_yolo_label_file(label_path)
+                problems = validate_boxes(boxes, allowed_class_ids={0})
+            except (OSError, UnicodeError, YoloAnnotationError) as exc:
+                invalid_files += 1
+                print(f"  ERROR: {exc}")
+                continue
+
+            if not boxes:
+                empty_files += 1
+            if problems:
+                invalid_boxes += len(problems)
+                if invalid_boxes <= 20:
+                    for problem in problems:
+                        print(f"  INVALID: {problem}")
+
+        print(f"Label files with parsing errors: {invalid_files}")
+        print(f"Empty label files: {empty_files}")
+        print(f"Annotation validation problems: {invalid_boxes}")
+
+    print("\n=== Audit complete ===")
+
+
+if __name__ == "__main__":
+    main()
