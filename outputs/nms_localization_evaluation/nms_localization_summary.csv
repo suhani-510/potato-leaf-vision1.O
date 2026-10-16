@@ -1,0 +1,3 @@
+﻿nms_iou,confidence,validation_images,ground_truth_boxes,predicted_boxes,matched_boxes_iou50,unmatched_ground_truth,unmatched_predictions,box_recall_iou50,note
+0.7,0.1,19,39,153,30,9,123,0.7692307692307693,Unmatched predictions are not automatically false positives; unannotated real lesions may exist.
+0.5,0.1,19,39,87,29,10,58,0.7435897435897436,Unmatched predictions are not automatically false positives; unannotated real lesions may exist.

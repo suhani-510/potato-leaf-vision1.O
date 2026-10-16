@@ -1,0 +1,28 @@
+[
+    {
+        "threshold": 0.25,
+        "validation_images": 19,
+        "known_ground_truth_images": 19,
+        "true_positives": 16,
+        "false_positives": 0,
+        "false_negatives": 3,
+        "true_negatives": 0,
+        "image_level_recall": 0.8421052631578947,
+        "image_level_precision": 1.0,
+        "image_level_specificity": null,
+        "note": "Metrics compare predictions with existing annotations. Unannotated images are not necessarily healthy."
+    },
+    {
+        "threshold": 0.1,
+        "validation_images": 19,
+        "known_ground_truth_images": 19,
+        "true_positives": 19,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 0,
+        "image_level_recall": 1.0,
+        "image_level_precision": 1.0,
+        "image_level_specificity": null,
+        "note": "Metrics compare predictions with existing annotations. Unannotated images are not necessarily healthy."
+    }
+]

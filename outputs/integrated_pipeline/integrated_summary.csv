@@ -1,0 +1,4 @@
+image,width,height,yolo_detection_count,opencv_candidate_count,segmentation_candidate_region_count,segmentation_candidate_ratio_percent,segmentation_mask_type
+e3d4df7f-f184-453e-8a99-3cb0de5a2488___RS_LB 3959.JPG,256,256,3,0,22,19.6524,Unverified HSV heuristic candidates
+e575421c-a9d4-4c0e-8027-b12fca1e3ac9___RS_LB 2806.JPG,256,256,1,14,54,12.7831,Unverified HSV heuristic candidates
+e7e39ba3-b9af-4d5f-afb1-aea45e13446a___RS_LB 2876.JPG,256,256,4,0,6,30.7763,Unverified HSV heuristic candidates

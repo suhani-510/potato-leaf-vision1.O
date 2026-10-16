@@ -1,0 +1,20 @@
+﻿image,ground_truth_boxes,predicted_boxes,matched_boxes,missed_ground_truth_boxes,unmatched_predictions,label_file_exists,match_iou_threshold
+e3d4df7f-f184-453e-8a99-3cb0de5a2488___RS_LB 3959.JPG,2,3,1,1,2,True,0.5
+e575421c-a9d4-4c0e-8027-b12fca1e3ac9___RS_LB 2806.JPG,1,1,0,1,1,True,0.5
+e7e39ba3-b9af-4d5f-afb1-aea45e13446a___RS_LB 2876.JPG,1,2,1,0,1,True,0.5
+e95f2954-1b68-490d-9684-90b3080676b1___RS_LB 3997.JPG,1,0,0,1,0,True,0.5
+ea356b9c-9090-4f0d-9083-d1f63c77372d___RS_LB 2800.JPG,1,0,0,1,0,True,0.5
+ebd47dca-590b-43c4-812d-32f95b776690___RS_LB 3834.JPG,1,0,0,1,0,True,0.5
+ee09546f-d7cd-4af9-9445-41745638c9c3___RS_LB 4471.JPG,1,3,1,0,2,True,0.5
+f18c34fd-e43a-4338-b3f3-6537f2f84f98___RS_LB 4111.JPG,2,2,1,1,1,True,0.5
+f1b1a037-34e4-4016-a0bc-703059820f24___RS_LB 4343.JPG,3,2,2,1,0,True,0.5
+f2676f08-798e-4291-8aa2-0655ca54cb07___RS_LB 4292.JPG,4,2,2,2,0,True,0.5
+f4e0bb0f-5f98-497c-a090-4e4c47f6707b___RS_LB 5153.JPG,6,5,5,1,0,True,0.5
+f4e6847d-d381-4849-9ff1-930cfb597d08___RS_LB 5097.JPG,2,3,1,1,2,True,0.5
+f528b00d-99a6-41db-8d96-9eed58b519c1___RS_LB 4544.JPG,1,1,0,1,1,True,0.5
+f528e881-b237-4797-ab54-0152eb901f53___RS_LB 3854.JPG,1,1,0,1,1,True,0.5
+f68e448a-c2f5-4638-a7cb-45e73083ae4a___RS_LB 3892.JPG,2,3,1,1,2,True,0.5
+f795a3d7-2915-447c-9e6f-df1d895f98bc___RS_LB 2792.JPG,3,3,3,0,0,True,0.5
+f87fce12-78df-4a8c-92ff-8c0b83cc82b9___RS_LB 3025.JPG,1,1,1,0,0,True,0.5
+f926e3c1-74bb-4397-85ca-725a54dfaf49___RS_LB 3053.JPG,1,1,1,0,0,True,0.5
+fb9dc049-ec76-4502-9a11-13fb62a26ed4___RS_LB 3916.JPG,5,3,1,4,2,True,0.5

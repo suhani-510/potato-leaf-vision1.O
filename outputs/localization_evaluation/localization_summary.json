@@ -1,0 +1,24 @@
+[
+    {
+        "threshold": 0.25,
+        "validation_images": 19,
+        "total_ground_truth_boxes": 39,
+        "total_predicted_boxes": 46,
+        "matched_ground_truth_boxes_iou50": 21,
+        "unmatched_ground_truth_boxes": 18,
+        "unmatched_predictions": 25,
+        "box_recall_iou50": 0.5384615384615384,
+        "note": "Unmatched predictions are not automatically false positives; some may represent unannotated real lesions. IoU matching uses a threshold of 0.50."
+    },
+    {
+        "threshold": 0.1,
+        "validation_images": 19,
+        "total_ground_truth_boxes": 39,
+        "total_predicted_boxes": 153,
+        "matched_ground_truth_boxes_iou50": 30,
+        "unmatched_ground_truth_boxes": 9,
+        "unmatched_predictions": 123,
+        "box_recall_iou50": 0.7692307692307693,
+        "note": "Unmatched predictions are not automatically false positives; some may represent unannotated real lesions. IoU matching uses a threshold of 0.50."
+    }
+]

@@ -1,0 +1,6 @@
+path: C:\Users\Jujhar\Desktop\work\5th sem\CV lab\potato-leaf-vision1.O\data\yolo
+train: images/train
+val: images/val
+nc: 1
+names:
+  0: late_blight

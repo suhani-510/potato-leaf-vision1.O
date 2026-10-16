@@ -1,0 +1,15 @@
+{
+    "validation_images": 19,
+    "images_with_known_ground_truth": 19,
+    "images_with_unknown_ground_truth": 0,
+    "confidence_threshold": 0.25,
+    "true_positives": 16,
+    "false_positives": 0,
+    "false_negatives": 3,
+    "true_negatives": 0,
+    "image_level_precision": 1.0,
+    "image_level_recall": 0.8421052631578947,
+    "image_level_specificity": null,
+    "image_level_accuracy": 0.8421052631578947,
+    "note": "Ground truth is based on the existing YOLO annotations. An empty annotation is treated as no annotated lesion, not as proof that the leaf is biologically healthy."
+}
